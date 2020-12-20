@@ -8,7 +8,7 @@ import Spinner from 'react-bootstrap/Spinner';
 import Row from 'react-bootstrap/Row';
 import "../css/main.css";
 const PosCentral: React.FC = () => (
-    <Col md="9">
+    <Col md="9"  style={{padding:"0px"}}>
         <Card style={{ width: '100%' }}>
             <Card.Body>
                 <Card.Title id="TitleRegistrarFactura" className="text-center">Ferreteria La Unión</Card.Title>
