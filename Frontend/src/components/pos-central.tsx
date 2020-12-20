@@ -11,7 +11,7 @@ const PosCentral: React.FC = () => (
     <Col md="9"  style={{padding:"0px"}}>
         <Card style={{ width: '100%' }}>
             <Card.Body>
-                <Card.Title id="TitleRegistrarFactura" className="text-center">Ferreteria La Unión</Card.Title>
+                <Card.Title id="TitleRegistrarFactura" style={{ fontFamily:"fantasy" }} className="text-center">Ferreteria La Unión</Card.Title>
                 <Card.Subtitle id="SubtitleRegistrarFactura" className="mb-2 text-center">Punto De Venta</Card.Subtitle>
                 <Card.Text>
                     <Card.Header>
@@ -22,6 +22,12 @@ const PosCentral: React.FC = () => (
                                 </Col>
                                 <Col md="1">
                                     <Form.Control disabled placeholder="15" />
+                                </Col>
+                                <Col md="2">
+                                    <Form.Label className="col-12 text-right">Apert. Caja</Form.Label>
+                                </Col>
+                                <Col md="1">
+                                    <Form.Control className="text-right" disabled placeholder="10,000.00" />
                                 </Col>
                                 <Col md="2">
                                     <Form.Label className="col-12 text-right">Total Monto Día</Form.Label>
@@ -119,18 +125,23 @@ const PosCentral: React.FC = () => (
                     </Card.Header>
                     <Card.Header>
                       <Row>
-                      <Col md="4">
+                      <Col md="3">
                         <Form inline>
                           <Form.Control type="text" placeholder="Producto" className="col-8 mr-sm-2" />
                           <Button variant="outline-secondary"><Spinner as="span" animation="grow" size="sm" role="status" aria-hidden="true" />Buscar</Button>
                         </Form>
                       </Col>
-                      <Col md="4">
+                      <Col md="3">
+                        <Form.Control as="select" >
+                          <option>Categoria</option>
+                        </Form.Control>
+                      </Col>
+                      <Col md="3">
                         <Form.Control as="select" >
                           <option>Producto</option>
                         </Form.Control>
                       </Col>
-                      <Col md="4">
+                      <Col md="3">
                         <Form.Control as="select" >
                           <option>Proveedor</option>
                         </Form.Control>
