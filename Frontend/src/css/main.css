@@ -350,3 +350,7 @@ header{
 #SubtitleRegistrarFactura{font-size: xx-large;}
 #tareatextRegistrarFac{margin-bottom: 10px;}
 #margenesTotalFacRegis{margin-left: auto;}
+#butt_cal_color:hover{background-color: rgb(52, 67, 97); color: white;}
+#butt_cal_color{background-color:  white; color: rgb(52, 67, 97);border-color: rgb(52, 67, 97);}
+#butt_cal_color_num{background-color: rgb(52, 67, 97); color: white;border-color: white;}
+#butt_cal_color_num:hover{background-color:  white; color: rgb(52, 67, 97);border-color: rgb(52, 67, 97);}

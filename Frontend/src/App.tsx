@@ -51,7 +51,7 @@ const App:React.FC = () => (
       <Route path="/contabilidad/facturasPagar" exact component = {listado_FacturasPorPagar}/>
       <Route path="/contabilidad/facturasPagar/registrar" exact component = {RegistrarFacturaPagar}/> 
       <Route path="/Contabilidad/facturasPagar/:id" exact component = {ModDellateFacturaPagar}/>
-
+      
 
     </Switch>
   </BrowserRouter>
